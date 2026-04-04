@@ -5,6 +5,7 @@ npm i -g figma-save-img
 
 ## 使用——先在figma 设置token 
 ```
+
 1. 选中目标图层，右边赋值图层链接。
 2. 命令行执行插件，输入：figs。
 3. 按提示先输入 token，如果已经有就跳过。
