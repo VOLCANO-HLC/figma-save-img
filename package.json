@@ -15,9 +15,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@code.inke.cn:lishilan/figma-save-img.git"
+    "url": "https://github.com/VOLCANO-HLC/figma-save-img.git"
   },
-  "author": "lishilan",
+  "author": "HLC",
   "license": "ISC",
   "dependencies": {
     "figma-api": "^1.11.0",
