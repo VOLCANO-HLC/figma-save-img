@@ -1,0 +1,35 @@
+{
+  "name": "figma-save-img",
+  "version": "1.0.0",
+  "description": "figma down img",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "scripts": {
+    "dev": "rollup -w -c rollup.config.js --bundleConfigAsCjs",
+    "build": "rimraf lib/ && rollup -c rollup.config.js",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "release": "node scripts/release"
+  },
+  "bin": {
+    "figs": "bin/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@code.inke.cn:lishilan/figma-save-img.git"
+  },
+  "author": "lishilan",
+  "license": "ISC",
+  "dependencies": {
+    "figma-api": "^1.11.0",
+    "fs-extra": "^11.1.1",
+    "inquirer": "^8.2.6",
+    "minimist": "^1.2.8"
+  },
+  "devDependencies": {
+    "chalk": "^4.1.2",
+    "ora": "^5.1.0",
+    "rollup": "^3.26.3",
+    "rollup-plugin-cleanup": "^3.2.1",
+    "rollup-plugin-preserve-shebang": "^1.0.1"
+  }
+}
