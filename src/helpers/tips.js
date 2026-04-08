@@ -25,6 +25,9 @@ const logWarn = message =>
 const logSuccess = message =>
   console.log(`${chalk.green(' ✨ ')} ${chalk.greenBright(message)}`);
 
+const logError = message =>
+  console.log(`${chalk.red(' ❌ ')} ${chalk.redBright(message)}`);
+
 export default {
   loadingStart,
   loadingSuccess,
@@ -32,4 +35,5 @@ export default {
   logInfo,
   logWarn,
   logSuccess,
+  logError,
 };

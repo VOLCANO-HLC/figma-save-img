@@ -6,7 +6,7 @@
   "module": "dist/index.js",
   "scripts": {
     "dev": "rollup -w -c rollup.config.js --bundleConfigAsCjs",
-    "build": "rimraf lib/ && rollup -c rollup.config.js",
+    "build": "npx rimraf lib/ && rollup -c rollup.config.js --bundleConfigAsCjs",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "release": "node scripts/release"
   },

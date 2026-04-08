@@ -4,7 +4,7 @@ import inquirer from 'inquirer';
 
 const ACCESS_TOKEN_KEY_PATH = path.resolve(__dirname, '..', 'access_token_key.txt');
 
-async function getFigmaAccessToken() {
+export async function getFigmaAccessToken() {
   try {
     const { url } = await inquirer.prompt([
       {
@@ -28,6 +28,11 @@ async function getFigmaAccessToken() {
     console.log(err);
   }
 }
+
+/** 清除 accessToken */
+export const clearFigmaAccessToken = () => {
+  fs.writeFileSync(ACCESS_TOKEN_KEY_PATH, '', 'utf-8');
+};
 
 /** 获取 accessToken */
 export const readFigmaAccessToken = () => {
